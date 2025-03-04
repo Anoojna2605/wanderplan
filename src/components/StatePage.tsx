@@ -6,7 +6,7 @@ export default function StatePage() {
     const [places,setPlaces] = useState([]);
 
 useEffect(()=>{
-    axios.get("http://localhost:8080/wpn/get/place?name=ap").then(
+    axios.get("http://localhost:8080/wpn/get/all").then(
 
 (res)=>{
     setPlaces(res.data);
